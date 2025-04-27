@@ -12,8 +12,38 @@ Bu proje istemci ve sunucu arasında güvenli dosya transferi sağlayan bir uygu
 ## Kurulum
 
 ```bash
-git clone https://github.com/kullaniciadiniz/CryptoTransfer.git
-cd CryptoTransfer
+git clone https://github.com/enesbabekoglu/SecureFileTransfer-IPLayer.git
+cd SecureFileTransfer-IPLayer
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
+
+## Kullanım
+
+Öncelikle RSA anahtarlarını oluşturun:
+
+```bash
+mkdir keys
+openssl genpkey -algorithm RSA -out keys/private_key.pem -pkeyopt rsa_keygen_bits:2048
+openssl rsa -pubout -in keys/private_key.pem -out keys/public_key.pem
+```
+
+Sunucuyu başlatın:
+
+```bash
+python3 server.py
+```
+
+Başka bir terminalde istemciyi başlatın:
+
+```bash
+python3 client.py
+```
+
+## Gereksinimler
+
+- Python 3.8+
+- cryptography
+- scapy
+- pytest
