@@ -157,5 +157,5 @@ Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 
 ---
 
-📧 İletişim: enes@example.com
+📧 İletişim: enesbabekoglu@gmail.com
 🌐 GitHub: [github.com/enesbabekoglu](https://github.com/enesbabekoglu)
