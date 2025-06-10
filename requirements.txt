@@ -1,3 +1,7 @@
-cryptography
-scapy
-pytest
+cryptography>=41.0.0  # Kriptografi işlemleri için
+scapy>=2.5.0     # Ağ paketleri işlemleri için
+matplotlib>=3.7.0  # Grafik görselleştirme için
+python-dateutil>=2.8.0  # Tarih/saat işlemleri için
+tqdm>=4.64.0     # İlerleme çubukları için
+pyqt5>=5.15.0    # Grafik arayüzü için
+numpy>=1.24.0    # Matplotlib için gerekli
