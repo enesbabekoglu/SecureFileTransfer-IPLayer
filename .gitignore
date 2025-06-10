@@ -1,0 +1,103 @@
+###############################################
+# Güvenli Dosya Transfer Sistemi .gitignore #
+###############################################
+
+# SADECE AŞAĞIDAKİ DOSYALARI VE KLASÖRLERİ DAHİL ET: #
+# - src/ klasörü içindeki Python kodu
+# - requirements.txt
+# - README.md
+# - LICENSE
+# - .gitignore
+# - baslat.sh, baslat.bat gibi çalıştırma betikleri
+# - Diğer önemli konfigürasyon dosyaları
+
+# TEMİZ BİR REPO İÇİN TÜM DIŞARIDA BIRAKMA KURALLARI #
+
+# Proje dokumantasyon klasörü - GitHub için gerekli değil
+Guide/
+
+# Python bytecode ve önbellek dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Sanal ortam klasörleri
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Oluşturulmuş dosyalar
+received_files/*
+!received_files/.gitkeep
+transfer_temp/
+*.log
+logs/
+log/
+server.log
+client.log
+mitm.log
+*.log.*
+
+# Dağıtım ve paketleme dosyaları
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Güvenlik dosyaları ve anahtarlar
+keys/*
+!keys/README.md
+*.pem
+*.key
+*.cert
+*.crt
+
+# MacOS özel dosyaları
+.DS_Store
+*.app
+*.command
+Güvenli Dosya Transfer.app/
+baslatici.command
+*.dmg
+
+# Windows özel dosyaları
+Thumbs.db
+desktop.ini
+
+# IDE ve editör dosyaları
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Geçici dosyalar ve veriler
+tmp/
+temp/
+.cache
+test_data/
+gonderilecek_dosya.txt
+*.db
+*.sqlite3
+.directory
+.backup/
+*.bak
+
+# Test ve raporlama dosyaları
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*,cover
+.pytest_cache/
+
+# Diğer özel dosyalar
+.ipynb_checkpoints  # Jupyter
+instance/  # Flask instance
+
